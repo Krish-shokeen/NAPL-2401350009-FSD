@@ -89,10 +89,31 @@ import (
 // 	fmt.Printf("%.2f°C is %.2f°F\n", c, c.ToF())
 // }
 
-func result(a, b, c int) (float64, bool) {
-	avg := float64(a+b+c) / 3
-	return avg, avg >= 40
+// func result(a, b, c int) (float64, bool) {
+// 	avg := float64(a+b+c) / 3
+// 	return avg, avg >= 40
+// }
+// func main() {
+// 	fmt.Println(result(3, 4, 5))
+// }
+// package classwork
+
+
+
+type student struct {
+	name  string
+	age   int
+	marks float64
 }
+
 func main() {
-	fmt.Println(result(3, 4, 5))
+	s := student{
+		name:  "krish",
+		age:   20,
+		marks: 85.5,
+	}
+
+	fmt.Printf("Name of the student: %s\n", s.name)
+	fmt.Printf("Age of the student: %d\n", s.age)
+	fmt.Printf("Marks of the student: %.1f\n", s.marks)
 }
