@@ -7,7 +7,6 @@ import (
 	"strconv"
 	"strings"
 )
-
 const (
 	minAllowed = -1000000.0
 	maxAllowed = 1000000.0
